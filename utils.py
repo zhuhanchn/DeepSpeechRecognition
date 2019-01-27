@@ -1,4 +1,5 @@
 import os
+import difflib
 import numpy as np
 import tensorflow as tf
 import scipy.io.wavfile as wav
@@ -6,7 +7,7 @@ from tqdm import tqdm
 from scipy.fftpack import fft
 from python_speech_features import mfcc
 from random import shuffle
-
+from keras import backend as K
 
 def data_hparams():
     params = tf.contrib.training.HParams(
