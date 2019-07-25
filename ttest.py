@@ -5,7 +5,7 @@ import tensorflow as tf
 import numpy as np
 from utils import decode_ctc, GetEditDistance
 
-
+######
 # 0.准备解码所需字典，参数需和训练一致，也可以将字典保存到本地，直接进行读取
 from utils import get_data, data_hparams
 data_args = data_hparams()
